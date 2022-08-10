@@ -1,0 +1,51 @@
+.hero{
+    min-height: calc(100vh - 108.67px);
+    background-color: var(--grey-1);
+    background-image: linear-gradient(var(--gradient)), url("../../assets/images/hero-bg.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--primary-4);
+}
+.hero li{
+    display: inline-block;
+    margin: 0 2rem;
+    text-transform: capitalize;
+}
+
+.hero .sub-heading{
+    color: var(--primary-1);
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+.hero p{
+    color: var(--primary-4);
+    letter-spacing: 1px;
+    margin-bottom: 0.2rem;
+}
+
+
+.hero-info li{
+    list-style-type: disc;
+    display: list-item;
+}
+
+.hero-info ul{
+  margin-top: 0;
+}
+
+.hero-info{
+    max-width: 28rem;
+}
+.hero .btn{
+    margin-top: 2rem;
+   padding: 0.5rem 1.5rem;
+}
+
+
+@media screen and (max-width: 500px) {
+    .hero{
+        background-image: none;
+    }
+}

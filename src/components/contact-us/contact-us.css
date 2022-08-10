@@ -1,0 +1,88 @@
+.form-control{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.checkbox-control{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: 40px;
+}
+
+.form-control input{
+    height: 40px;
+    border: 0.5px solid var(--grey-2);
+    outline: none;
+    border-radius: 5px;
+    margin: 1rem 0;
+}
+.contact P{
+    font-size: small;
+}
+.form-control input:focus{
+    outline: 0.5px solid rgb(3, 3, 197);
+}
+.form-control input::placeholder{
+    background-color: transparent;
+}
+.contact .btn{
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1rem 0;
+}
+.form-logo{
+height: 20px;
+max-width: 30px;
+object-fit: cover;
+}
+.attach-control{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+.attach-control input{
+    display: none;
+    opacity: 0;
+}
+.attach-control label{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.attach-control label span{
+    display: inline-block;  
+}
+input[type="checkbox"]{
+        padding: 1rem;
+        height: 20px;
+        width: 20px;
+        accent-color: var(--primary-1)
+}
+
+.checkbox-control span{
+    font-weight: bold;
+}
+
+form textarea{
+    resize: none;
+    border: 0.5px solid var(--grey-2);
+    border-radius: 5px;
+    outline: none;
+    margin-top: 1rem;
+}
+
+form textarea:focus{
+    outline: 0.5px solid rgb(3, 3, 197);
+}
+
+
+@media screen and (max-width: 530px) {
+    .checkbox-control label{
+        font-size: 14px;
+    }
+    .attach-control span{
+        font-size: 14px;
+    }
+}
