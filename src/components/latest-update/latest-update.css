@@ -1,0 +1,66 @@
+.latest-update{
+    text-align: center;
+}
+
+.latest-update p{
+    max-width: 100%;
+    text-align: center;
+}
+.latest-update .form-control{
+   width: 100%;
+   display: -ms-grid;
+   display: grid;
+   place-items: center;
+   text-align: center;
+-ms-grid-row-align: center;
+-ms-grid-column-align: center;
+place-self: center 
+}
+
+
+.latest-update .form-control input{
+    height: 50px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+
+}
+
+.latest-update .form-control .input-wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border: 0.5px solid var(--grey-2);
+    background-color: white;
+}
+
+.latest-update .btn{
+    margin-right: 5px;
+}
+
+@media screen and (max-width: 310px){
+    .latest-update .form-control .input-wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        width: 90%;
+        margin: 0 auto;
+        border: none;
+    
+    }
+    .latest-update .form-control input{
+        border: 0.5px solid var(--grey-2);
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+
+
+

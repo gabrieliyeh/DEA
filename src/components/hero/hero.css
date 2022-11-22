@@ -1,51 +1,179 @@
 .hero{
-    min-height: calc(100vh - 108.67px);
-    background-color: var(--grey-1);
-    background-image: linear-gradient(var(--gradient)), url("../../assets/images/hero-bg.svg");
-    background-position: center;
+    min-height: calc(100vh - 80px);
+    background-image: url("../../assets/images/hero-bg-img.svg");
     background-repeat: no-repeat;
-    background-size: cover;
-    color: var(--primary-4);
-}
-.hero li{
-    display: inline-block;
-    margin: 0 2rem;
-    text-transform: capitalize;
+    background-size: cover;   
 }
 
-.hero .sub-heading{
-    color: var(--primary-1);
-    display: inline-block;
-    margin-top: 1rem;
+.hero-margin{
+    margin-top: 80px;
 }
 
+.hero-main{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 2rem;
+}
+
+.padding{
+    padding: 2rem 0;
+}
 .hero p{
-    color: var(--primary-4);
     letter-spacing: 1px;
     margin-bottom: 0.2rem;
+    max-width: 30em;
 }
 
-
-.hero-info li{
-    list-style-type: disc;
-    display: list-item;
+.hero .left{
+    position: relative;
 }
 
-.hero-info ul{
-  margin-top: 0;
+.hero-polygon{
+  position: absolute;
+  bottom: -30%;
 }
 
-.hero-info{
-    max-width: 28rem;
+.img-wrapper{
+    position: relative;
+    max-width: 500px;
+    width: 100%;
+}
+
+.hero .hero-main-img{
+    width: 90%;
+    height: 450px;
+}
+
+.hero-square{
+    position: absolute;
+    left: 15px;
+    top: 20%;
+}
+
+.hero-trends{
+    position: absolute;
+    right: -10px;
+    top: 40px;    
+}
+
+.hero-insights{
+    position: absolute;
+    bottom: -5%;
+    left:-5%;
+}
+
+.hero-circle{
+    position: absolute;
+    right: 20%;
+    bottom: -5%;
+}
+
+.hero-indicator{
+    position: absolute;
+    left: -80px;
+    top: 50%;
 }
 .hero .btn{
-    margin-top: 2rem;
+margin-top: 1rem;
    padding: 0.5rem 1.5rem;
+   font-weight: 700;
 }
 
+@media screen and (max-width: 1100px){
 
-@media screen and (max-width: 500px) {
-    .hero{
-        background-image: none;
+    .hero-polygon{
+        left: 0;
+        bottom: -70px;
     }
+
+    .hero-indicator{
+        display: none;
+    }    
 }
+
+
+    @media screen and (max-width: 768px) {
+
+        .hero-main{
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+                -ms-flex-direction: column;
+                    flex-direction: column;
+            text-align: center;
+        }
+        .img-wrapper{
+            max-width: 100%;
+             margin: 0 auto;
+        }
+       
+       
+        .hero-circle{
+            display: none;
+        }
+        .hero-indicator{
+            display: none;
+        }
+
+        .hero .left{
+            width: 90%;
+            margin: 0 auto;
+        }
+        .hero .right{
+            width: 90%;
+            margin: 0 auto;
+            display: -ms-grid;
+            display: grid;
+            place-items: center;
+        }
+        .hero .right > * { 
+        -ms-grid-row-align: center;
+         -ms-grid-column-align: center; 
+            place-self: center 
+        }
+        .hero .hero-main-img{
+            width: 100%;
+        }
+        .hero p{
+            max-width: 100%;
+        }
+
+        .img-wrapper{
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+            margin-left: 0;
+        }
+
+        .hero-insights{   
+            left:0%;
+        }
+        
+    .hero-polygon{
+        display: none;
+    }
+        
+    }
+
+    @media screen and (max-width: 300px){
+        .hero-insights{
+            display: none;
+        }
+        .hero-trends{
+            display: none;
+        }
+    }

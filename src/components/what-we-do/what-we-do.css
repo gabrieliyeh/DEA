@@ -1,0 +1,109 @@
+.what-we-do-center{
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1.5fr 2rem 2fr;
+    grid-template-columns: 1.5fr 2fr;
+    gap: 2rem;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+
+.what-we-do-center .left h2{
+    font-size: 2rem;
+}
+
+.what-we-do-center .details .title{
+    color: rgba(15, 36, 65, 1);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.what-we-do-center .details p{
+    text-align: center;
+}
+
+
+
+.what-we-do-center .right{
+    background-image: url("../../assets/images/what-we-do-bg-pattern.svg");
+    background-repeat: no-repeat;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: 1fr 1fr;
+    gap:30px;
+    padding: 3rem 2rem;
+    border-top-left-radius:10px;
+    border-bottom-left-radius:10px;
+    height: 100%;
+    
+}
+
+.what-we-do-center .btn{
+    text-transform: capitalize;
+}
+
+.what-we-do-center .left{
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+}
+
+.details{
+    background-color: white;
+    padding: 10px 15px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+
+}
+@media screen and (max-width: 1200px) {
+    .details{
+        border: 1px solid #CECECE;
+    }
+    .what-we-do-center{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .what-we-do-center p{
+        max-width: 100%;
+    }
+
+    .what-we-do-center .right{
+        background-image: none;
+        padding: 0 ;
+        margin-top: 20px;
+    }
+   
+
+}
+    
+
+@media screen and (max-width: 768px) {
+    .what-we-do-center{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .what-we-do-center .right{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr; 
+    }
+
+    .details{
+        border: 1px solid #CECECE;
+    }
+}

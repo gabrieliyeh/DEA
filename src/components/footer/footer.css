@@ -1,26 +1,77 @@
 .footer{
-    background-color: var(--primary-3);
-    color: var(--primary-4);
+    background-color: var(--primary-2);
+    color: white;
+}
+.footer h2 {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 0;
 }
 
-.footer p{
-    color: var(--primary-4);
+
+.footer .wrapper{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-line-pack: justify;
+        align-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
+.footer .copyright{
+    margin-top: 120px;
+}
+.footer h3{
+    color: white;
+    margin-top: 20px;
+}
+.footer p{
+    color: white;
+}
+
 .footer-center{
+    display: -ms-grid;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+
+    grid-template-columns: repeat(4, 1fr);
 }
 .footer-sub-center{
+    display: -ms-grid;
     display: grid;
+  
     grid-template-columns: repeat(3, 1fr);
 }
+.footer .last-col{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-top: 20px;
+}
+
+.footer .last-col h2{
+    margin-top: 0;
+}
+
+.footer .last-col p{
+    margin-bottom: 0;
+}
+
 
 .col li{
-    height: auto;
     display: block;
     margin-top: 1rem;
-    margin-left: 0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
 }
 .col p{
     font-size: 0.9rem;
@@ -29,22 +80,7 @@
 .footer-sub-center h3{
     font-size: 1.5rem;
 }
-.footer-icon{
-margin-left: 0;
-}
-.footer span{
-    /* display: inline-block; */
-    margin-left: 0.5rem;
-    margin-top: 1rem;
-}
-.list-container{
-    display: flex;
-    align-items: center;
-}
 
-.list-container li{
-    margin-right: 5px;
-}
 
 
 @media screen and (max-width: 768px) {
@@ -59,9 +95,21 @@ margin-left: 0;
     }
 
     .list-container{
-
+        display: -ms-grid;
         display: grid;
         place-items: center;
+    }
+
+    .footer-center .col p{
+        max-width: 100%
+    }
+
+    .footer .last-col{
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        text-align: center;
     }
    
    
@@ -70,12 +118,9 @@ margin-left: 0;
 
 @media screen and (max-width: 380px) {
     .footer-center{
+        -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     }
 
-    .footer-sub-center{
-        display: block;
-        
-    }
     
 }

@@ -1,0 +1,94 @@
+.services{
+    background: rgb(250, 250, 250);
+}
+.service-heading{
+    min-height: 60vh;
+    background-color: var(--light-blue);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+}
+
+.service-heading h2{
+    color: var(--primary-2);
+    text-align: center;
+}
+
+.service-center{
+    display: -ms-grid;
+    display: grid;
+    gap: 1rem;
+    -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem 4rem;
+    
+}
+
+.service-center .card .title{
+    font-weight: 700;
+    color: #0F2441;
+    white-space: nowrap;
+}
+
+.service-center .card .btn{
+    width: 100%;
+}
+
+.service-center .card .title.grey{
+    color: var(--text-color);
+}
+
+.service-center .wrapper .heading{
+    text-align: center;
+}
+
+.services .section-title{
+    text-align: center;
+    max-width: 100%;
+}
+
+.services .sub-title{
+    text-align: center;
+    max-width: 100%;
+}
+
+.btn-color-white{
+    background-color: white;
+    color: var(--text-color);
+    border: 2px solid var(--text-color); 
+}
+
+.btn-color-white:hover{
+    background-color: transparent;
+    border: 2px solid  var(--primary-1);
+    color: black;
+}
+
+
+@media screen and (max-width: 950px) {
+    .service-center{
+        -ms-grid-columns: 1fr 2rem 1fr;
+        grid-template-columns: 1fr 1fr;
+        padding: 0;
+        gap: 2rem;
+    }
+}
+
+@media screen and (max-width: 610px){
+    .service-center{
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        padding: 0;
+        gap: 2rem;
+    }
+
+    .service-center .card{
+        text-align: center;
+    }
+}
