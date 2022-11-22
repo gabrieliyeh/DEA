@@ -10,9 +10,13 @@
     text-align: center;
 }
 .why-dae-center{
+ 
     display: -ms-grid;
+ 
     display: grid;
-    -ms-grid-columns: 1fr 1fr;
+
+    -ms-grid-columns: 1fr 40px 1fr;
+
     grid-template-columns: 1fr 1fr;
     gap: 40px;
     padding: 5rem;
@@ -22,8 +26,7 @@
     display: -ms-flexbox;
     display: flex;
    gap: 20px;
-   /* align-items: start; */
-    /* width: 400px; */
+
     min-height: 220px;
 }
 
@@ -43,7 +46,6 @@
     font-size: 1.5rem;
     color: rgba(0, 0, 0, 1);
     margin-bottom: 0.6rem;
-    /* line-height: 0; */
 }
 
 .margin-top{
@@ -67,7 +69,9 @@
 
 @media screen and (max-width:768px) {
     .why-dae-center{
+       
         -ms-grid-columns: 1fr;
+       
         grid-template-columns: 1fr;
         padding: 0;
     }

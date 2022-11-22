@@ -10,15 +10,24 @@
 }
 
 .hero-main{
+  
     display: -webkit-box;
+  
     display: -ms-flexbox;
+  
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
+            -webkit-box-align: center;
+
+                -ms-flex-align: center;
+
+                    align-items: center;
+ 
+            -webkit-box-pack: justify;
+ 
+                -ms-flex-pack: justify;
+ 
+                    justify-content: space-between;
     gap: 2rem;
 }
 
@@ -102,10 +111,14 @@ margin-top: 1rem;
     @media screen and (max-width: 768px) {
 
         .hero-main{
-            -webkit-box-orient: vertical;
-            -webkit-box-direction: normal;
-                -ms-flex-direction: column;
-                    flex-direction: column;
+          
+                    -webkit-box-orient: vertical;
+          
+                    -webkit-box-direction: normal;
+          
+                        -ms-flex-direction: column;
+          
+                            flex-direction: column;
             text-align: center;
         }
         .img-wrapper{
@@ -128,15 +141,16 @@ margin-top: 1rem;
         .hero .right{
             width: 90%;
             margin: 0 auto;
+         
             display: -ms-grid;
+         
             display: grid;
             place-items: center;
+            -ms-grid-row-align: center;
+            -ms-grid-column-align: center;
+            place-self: center
         }
-        .hero .right > * { 
-        -ms-grid-row-align: center;
-         -ms-grid-column-align: center; 
-            place-self: center 
-        }
+        
         .hero .hero-main-img{
             width: 100%;
         }

@@ -8,13 +8,15 @@
 }
 .latest-update .form-control{
    width: 100%;
+  
    display: -ms-grid;
+  
    display: grid;
    place-items: center;
+   -ms-grid-row-align: center;
+   -ms-grid-column-align: center;
+   place-self: center;
    text-align: center;
--ms-grid-row-align: center;
--ms-grid-column-align: center;
-place-self: center 
 }
 
 
@@ -29,12 +31,18 @@ place-self: center
 }
 
 .latest-update .form-control .input-wrapper{
+ 
     display: -webkit-box;
+ 
     display: -ms-flexbox;
+ 
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+ 
+            -webkit-box-align: center;
+ 
+                -ms-flex-align: center;
+ 
+                    align-items: center;
     border: 0.5px solid var(--grey-2);
     background-color: white;
 }
@@ -45,10 +53,14 @@ place-self: center
 
 @media screen and (max-width: 310px){
     .latest-update .form-control .input-wrapper {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+      
+                -webkit-box-orient: vertical;
+      
+                -webkit-box-direction: normal;
+      
+                    -ms-flex-direction: column;
+      
+                        flex-direction: column;
         width: 90%;
         margin: 0 auto;
         border: none;

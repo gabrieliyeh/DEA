@@ -5,9 +5,9 @@
 .contact-center{
     display: -ms-grid;
     display: grid;
-    gap: 2rem;
-    -ms-grid-columns: 1fr 1fr;
+    -ms-grid-columns: 1fr 2rem 1fr;   
     grid-template-columns: 1fr 1fr;
+    gap: 2rem;
 }
 
 .contact-center article{
@@ -27,10 +27,14 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+  
+            -webkit-box-orient: vertical;
+  
+            -webkit-box-direction: normal;
+  
+                -ms-flex-direction: column;
+  
+                    flex-direction: column;
     gap: 5px;
     width: 100%;
     margin-bottom: 20px;
@@ -116,9 +120,9 @@ display: none;
     display: -ms-flexbox;
     display: flex;
     gap: 10px;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
     margin-bottom: 20px;
 }
 .contact-page .form-check-control input{

@@ -10,18 +10,30 @@
 
 
 .footer .wrapper{
+   
     display: -webkit-box;
+   
     display: -ms-flexbox;
+   
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -ms-flex-line-pack: justify;
-        align-content: space-between;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+ 
+            -webkit-box-orient: vertical;
+ 
+            -webkit-box-direction: normal;
+ 
+                -ms-flex-direction: column;
+ 
+                    flex-direction: column;
+    
+        -ms-flex-line-pack: justify;
+    
+            align-content: space-between;
+    
+            -webkit-box-pack: justify;
+    
+                -ms-flex-pack: justify;
+    
+                    justify-content: space-between;
 }
 .footer .copyright{
     margin-top: 120px;
@@ -35,27 +47,46 @@
 }
 
 .footer-center{
+  
     display: -ms-grid;
+  
     display: grid;
+
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
 
     grid-template-columns: repeat(4, 1fr);
 }
 .footer-sub-center{
+
     display: -ms-grid;
+
     display: grid;
+  
+  
+    -ms-grid-columns: 1fr 1fr 1fr;
+  
   
     grid-template-columns: repeat(3, 1fr);
 }
 .footer .last-col{
+
     display: -webkit-box;
+
     display: -ms-flexbox;
+
     display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+
+            -webkit-box-align: center;
+
+                -ms-flex-align: center;
+
+                    align-items: center;
+   
+            -webkit-box-pack: justify;
+   
+                -ms-flex-pack: justify;
+   
+                    justify-content: space-between;
     margin-top: 20px;
 }
 
@@ -95,9 +126,14 @@
     }
 
     .list-container{
+    
         display: -ms-grid;
+    
         display: grid;
         place-items: center;
+        -ms-grid-row-align: center;
+        -ms-grid-column-align: center;
+        place-self: center
     }
 
     .footer-center .col p{
@@ -105,10 +141,14 @@
     }
 
     .footer .last-col{
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column;
+      
+                -webkit-box-orient: vertical;
+      
+                -webkit-box-direction: normal;
+      
+                    -ms-flex-direction: column;
+      
+                        flex-direction: column;
         text-align: center;
     }
    
@@ -118,7 +158,9 @@
 
 @media screen and (max-width: 380px) {
     .footer-center{
+      
         -ms-grid-columns: 1fr;
+      
         grid-template-columns: 1fr;
     }
 

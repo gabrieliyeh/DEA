@@ -1,16 +1,23 @@
 
 .our-values-center{
+
     display: -ms-grid;
+
     display: grid;
     gap: 2rem;
-    -ms-grid-columns: 1fr 1fr;
+
+    -ms-grid-columns: 1fr 2rem 1fr;
+
     grid-template-columns: 1fr 1fr;
 }
 
 .our-values-center .left{
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
+ 
+        -ms-flex-item-align: center;
+ 
+            -ms-grid-row-align: center;
+ 
+            align-self: center;
 }
 
 .our-values-center img{
@@ -21,7 +28,9 @@
 
 @media screen and (max-width: 768px) {
     .our-values-center{
+    
         -ms-grid-columns: 1fr;
+    
         grid-template-columns: 1fr;
         text-align: center;
 
