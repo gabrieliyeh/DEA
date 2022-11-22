@@ -1,6 +1,6 @@
 import "./faq.css";
 import { useState } from "react";
-import FAQImage from "../../assets/images/faq-img.svg"
+import FAQImage from "../../assets/images/faq-img.png"
 import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
 import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
 
