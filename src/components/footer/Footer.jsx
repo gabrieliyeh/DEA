@@ -13,14 +13,14 @@ const Footer = () => {
               <h3> Service</h3>
               <nav>
                 <ul>
+                <li>
+                    <NavLink to="#">Data Analysis</NavLink>
+                  </li>
                   <li>
-                    <NavLink to="/about">Mobile Development</NavLink>
+                    <NavLink to="#">Mobile Development</NavLink>
                   </li>
                   <li>
                     <NavLink to="#">Web Development</NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="#">Data Analysis</NavLink>
                   </li>
                   <li>
                     <NavLink to="#">Design</NavLink>

@@ -26,7 +26,7 @@ Visualize your data
 Pay for service
 Get result
         </p>
-        <Link className="btn" to="/services">
+        <Link className="btn" to="/contact">
         START FOR FREE
         </Link>
         <div>

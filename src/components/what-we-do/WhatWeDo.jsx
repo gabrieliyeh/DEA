@@ -1,4 +1,5 @@
 import "./what-we-do.css"
+import {Link} from "react-router-dom"
 import Icon1 from "../../assets/images/details1-icon.svg"
 import Icon2 from "../../assets/images/details2-icon.png"
 import Icon3 from "../../assets/images/details3-icon.svg"
@@ -13,40 +14,52 @@ const WhatWeDo = () => {
                     WHAT WE DO
                     </p>
                     <h2 className="title">We are here to help you understand your data</h2>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet. Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                
+                    <p>DAE simply never assumes when it comes to data. Rather with large sets of data, we look for patterns and summarize the data set’s main characteristics beyond modeling and hypothesis testing.</p>
+                    <p>DAE will help you show or summarize data points in a constructive way such that patterns might emerge that fulfill every condition of the data. We guide you all along the way in conducting statistical data analysis.</p>
 
-                    <button className="btn">See More</button>
+                   <Link to='/services'> <button className="btn">See More</button> </Link>
                 </div>
 
                 <div className=" right">
                     <div className="details">
+                        <div className="heading">
                         <img src={Icon1} alt="icon" />
-                        <span className="title">Explorative Analysis</span>
+                        <span className="title">Exploratory Data Analysis</span>
+                        </div>
                         <p>
-                        This is the method that will be used to draw data conclusion, it takes data from  a sample then makes conclusion about a group
+                        EDA is a philosophy that allows data analysts to approach a database without assumptions
                         </p>
                     </div>
                     <div className="details">
-                    <img src={Icon2} alt="icon" />
+                        <div className="heading">
+                        <img src={Icon2} alt="icon" />
                        
-                        <span className="title">Business Analysis</span>
+                       <span className="title">Business Analysis</span>
+                        </div>
+                   
                         <p>
-                        This is the method that will be used to draw data conclusion, it takes data from  a sample then makes conclusion about a group
+                        To keep good track of performance and trends of business, DAE helps you make a great and informative comparison of the business’s current position to the competition so that your organization can strategically improve its performance.
                         </p>
                     </div>
                     <div className="details">
-                    <img src={Icon3} alt="icon" />
+                        <div className="heading">
+                        <img src={Icon3} alt="icon" />
                         <span className="title">Inferential Analysis</span>
+                        </div>
+                    
                         <p>
-                        This is the method that will be used to draw data conclusion, it takes data from  a sample then makes conclusion about a group
+                        DAE seeks out the information beyond all that the data presents, and rather draws out qualitative information from the available data. We aim at concludes that extend beyond the immediate data alone.
                         </p>
                     </div>
                     <div className="details">
-                    <img src={Icon4} alt="icon" />
+                        <div className="heading">
+                        <img src={Icon4} alt="icon" />
                         <span className="title">Predictive Analysis</span>
+                        </div>
+                    
                         <p>
-                        This is the method that will be used to draw data conclusion, it takes data from  a sample then makes conclusion about a group
+                         In this process, we use data along with analysis, statistics, and machine learning techniques to create a predictive model for forecasting future events.
                         </p>
                     </div>
                 </div>
