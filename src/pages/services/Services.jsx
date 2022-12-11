@@ -41,7 +41,7 @@ const Services = () => {
             Data Analysis
             </span>
             <p>
-            Top-notch IOS & Android mobile apps based on the latest technologies and global trends.
+            Get your data analyzed by professionals in a timely manner with the analytic tool of your choice.
             </p>
             <button className='btn'>Get Started</button>
           </div>
@@ -50,7 +50,7 @@ const Services = () => {
             Web Development
             </span>
             <p>
-            Top-notch IOS & Android mobile apps based on the latest technologies and global trends.
+            Allow our Top notch programmers deliver a seamless and user friendly website.
             </p>
             <button className='btn btn-color-white'>Coming Soon</button>
           </div>
@@ -59,7 +59,7 @@ const Services = () => {
             Mobile Development
             </span>
             <p>
-            Top-notch IOS & Android mobile apps based on the latest technologies and global trends.
+            Top notch IOS and Android mobile apps based on the latest technologies and global trends.
             </p>
             <button className='btn btn-color-white'>Coming Soon</button>
           </div>

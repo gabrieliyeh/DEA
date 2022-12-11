@@ -45,7 +45,7 @@ const Contact = () => {
             <span className='tag'>
             Address: 
             </span>
-            datatechanalysis@gmail.com
+            Plot 19 Oba Amusa Adebambo Ave Agungi Lekki Lagos State
           </p>
           </article>
           <form >

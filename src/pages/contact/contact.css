@@ -16,6 +16,7 @@
 
 .contact-center .tag{
     font-weight: 700;
+    margin-right: 5px;
 }
 
 .contact-page form{
@@ -107,6 +108,7 @@
 }
 .contact-page .form-file-control span{
     color: var(--primary-1);
+    
 }
 .contact-page .form-file-control input{
 display: none;

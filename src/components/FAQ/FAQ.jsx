@@ -45,10 +45,7 @@ const FAQ = () => {
             {
                 showContent && (
                     <p>
-                    No, you do not need to create an account, you can analyze any data
-                    of your choice in three easy steps. No, you do not need to create
-                    an account, you can analyze any data of your choice in three easy
-                    steps.
+                    No DAE is a data analytical company.
                   </p>
                 )
             }
@@ -65,10 +62,7 @@ const FAQ = () => {
             {
                 showContent2 && (
                     <p>
-                    No, you do not need to create an account, you can analyze any data
-                    of your choice in three easy steps. No, you do not need to create
-                    an account, you can analyze any data of your choice in three easy
-                    steps.
+                    No you don't need to create an account as all you need to do is upload your data and the analytical tool you want us to use.
                   </p>
                 )
             }
@@ -85,10 +79,7 @@ const FAQ = () => {
             {
                 showContent3 && (
                     <p>
-                    No, you do not need to create an account, you can analyze any data
-                    of your choice in three easy steps. No, you do not need to create
-                    an account, you can analyze any data of your choice in three easy
-                    steps.
+                     DAE is not completely free as we charge some fee for the service we render.
                   </p>
                 )
             }
@@ -105,10 +96,7 @@ const FAQ = () => {
             {
                 showContent4  && (
                     <p>
-                    No, you do not need to create an account, you can analyze any data
-                    of your choice in three easy steps. No, you do not need to create
-                    an account, you can analyze any data of your choice in three easy
-                    steps.
+                    You will enjoy a timely, accurate and efficient work.
                   </p>
                 )
             }

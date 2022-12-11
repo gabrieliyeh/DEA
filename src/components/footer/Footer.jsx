@@ -75,7 +75,7 @@ const Footer = () => {
             <h3> Contact us</h3>
 
             <div className="first">
-              <p>FHA lugbe Abuja, Nigeria</p>
+              <p>Plot 19 Oba Amusa Adebambo Ave Agungi Lekki Lagos State.</p>
               <br />
               <p>Datatechanalytics@gmail.com</p>
             </div>
