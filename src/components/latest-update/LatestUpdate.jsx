@@ -1,8 +1,17 @@
+import { toast } from "react-toastify";
 import "./latest-update.css";
 import { useState } from "react";
 
 const LatestUpdate = () => {
   const [email, setEmail] = useState('');
+  const handleSubscription =(e)=> {
+    e.preventDefault()
+    setTimeout(()=> {
+      toast.success('Subscription successful')
+      setEmail('')
+    }, 1000)
+
+  }
 
   return (
     <section className="section latest-update">
@@ -11,7 +20,7 @@ const LatestUpdate = () => {
       <p>Make sure you sign up to get the latest updates 
         <br />
         about our solution.</p>
-        <form>
+        <form onSubmit={handleSubscription}>
           <div className="form-control">
             <div className="input-wrapper">
             <input

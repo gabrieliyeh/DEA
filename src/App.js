@@ -4,9 +4,12 @@ import Contact from './pages/contact/Contact';
 import Home from './pages/home/Home';
 import Services from './pages/services/Services';
 import ScrollToTop from './components/scroll-to-top/ScrollToTop';
+  import { ToastContainer} from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 function App() {
   return (
     <>
+    <ToastContainer/>
     <ScrollToTop/>
     <Routes>
       <Route index element={<Home/>}/>

@@ -131,6 +131,7 @@ display: none;
     height: 25px;
     width: 25px;
     accent-color: var(--primary-1);
+    cursor: pointer;
 }
 .contact-page .form-check-control p{
     margin-bottom: 0;

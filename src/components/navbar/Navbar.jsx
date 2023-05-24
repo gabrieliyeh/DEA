@@ -1,6 +1,6 @@
 import "./navbar.css";
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from "../../assets/images/dea-logo.png";
 import useScrollPosition from "../../hooks/useScrollPosition";
 import MenuOutlinedIcon from "@mui/icons-material/MenuOutlined";
@@ -8,6 +8,7 @@ import SideBar from "../side-bar/SideBar";
 function Navbar() {
   const position = useScrollPosition();
   const [toggleSideBar, setToggleSideBar] = useState(false);
+  const navigate = useNavigate()
 
   const handelToggleSidebar = () => {
     setToggleSideBar(!toggleSideBar)
@@ -35,7 +36,7 @@ function Navbar() {
                 <NavLink to="/contact">contact</NavLink>
               </li>
             </ul>
-            <button className="btn">get started</button>
+            <button onClick={()=> navigate('/contact')} className="btn">get started</button>
             <MenuOutlinedIcon
               fontSize="inherit"
               className="nav-icon"

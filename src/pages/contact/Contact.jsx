@@ -3,20 +3,46 @@ import useScrollPosition from '../../hooks/useScrollPosition'
 import Footer from '../../components/footer/Footer'
 import Navbar from '../../components/navbar/Navbar'
 import "./contact.css"
+import { toast } from 'react-toastify'
 
 const Contact = () => {
   const position = useScrollPosition();
   const [file,setFile]= useState('')
+  const [loading,setLoading]= useState(false)
+  const [contactInfo, setContactInfo]= useState({
+    fullName: '',
+    email: '',
+    message: ''
+  })
+
+  const handleChange = e => {
+    const {name, value}= e.target
+    setContactInfo(prevState=> ({
+      ...prevState,
+      [name]: value
+    }))
+  }
 
   const handleFileUpload = (e)=> {
-    console.log('i was called', 'file object')
     setFile(e.target.files[0])
-    console.log(file, 'file object')
+  }
+  const handleSubmit = e => {
+    setLoading(true)
+    e.preventDefault()
+    setTimeout(()=> {
+      toast.success('Message sent successfully')
+      setContactInfo({
+        ...contactInfo,
+        fullName: '',
+        email: '',
+        message: ''
+      })
+      setLoading(false)
+    }, 1000)
   }
 
   useEffect(() => {
     document.title= "Data-Tech-Analysis-Empire || Contact"
-
 }, [])
 
   return (
@@ -48,18 +74,18 @@ const Contact = () => {
             Plot 19 Oba Amusa Adebambo Ave Agungi Lekki Lagos State
           </p>
           </article>
-          <form >
+          <form onSubmit={handleSubmit}>
               <div className='form-control'>
                 <label htmlFor="fullName">Full name</label>
-                <input type="text" placeholder='Enter full name' />
+                <input name='fullName' value={contactInfo.fullName} type="text"  onChange={handleChange} placeholder='Enter full name' required />
               </div>
               <div className='form-control'>
                 <label htmlFor="email">Email</label>
-                <input type="email" placeholder='Enter email address' />
+                <input name='email' type="email" value={contactInfo.email} onChange={handleChange} placeholder='Enter email address' required />
               </div>
               <div className='form-control'>
                 <label htmlFor="message">Message</label>
-                <textarea name="" id="" cols="30" rows="10" placeholder='Enter message'>
+                <textarea name="message" onChange={handleChange} value={contactInfo.message} cols="30" rows="10" placeholder='Enter message' required>
 
                 </textarea>
               </div>
@@ -73,7 +99,7 @@ const Contact = () => {
               {file?.name}
               </div>
               <div className='form-check-control'>
-                <input type="checkbox" />
+                <input type="checkbox" required />
                 <p>
                 I have read and accepted the  
                   <span >
@@ -88,7 +114,7 @@ const Contact = () => {
                 </p>
               </div>
              
-              <button className="btn">
+              <button disabled={loading} className="btn">
               SEND MESSAGE
               </button>
           </form>
